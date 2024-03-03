@@ -2,7 +2,7 @@
   "name": "abode-calendar-app",
   "author": "hxf31891",
   "scripts": {
-    "setup": "setup:redis && setup:db",
+    "setup": "yarn setup:redis && yarn setup:db",
     "setup:redis": "docker run -p 6379:6379 -d redis",
     "setup:db": "docker run --rm -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:14.1",
     "db:migrate": "yarn db:migrate:make && yarn db:migrate:run",
