@@ -1,0 +1,32 @@
+export const eventMocks = [
+  {
+    id: "ab2b1903-3456-492a-8d88-c3fec91125c8",
+    title: "Event Test 1",
+    color: "#b5ecc2",
+    startTime: "2024-03-04T08:15:35+00:00",
+    endTime: "2024-03-04T08:45:35+00:00",
+    description: "Test event 1 description",
+    ownerId: "5c5dfa83-6621-41ee-9510-4c24eef439ba",
+    link: "https://google.com",
+  },
+  {
+    id: "6f729ced-874f-40cc-ad79-d3255f230be8",
+    title: "Event Test 2",
+    color: "#f0d08c",
+    startTime: "2024-03-04T08:15:35+00:00",
+    endTime: "2024-03-04T08:45:35+00:00",
+    description: "Test event 2 description",
+    ownerId: "0f902c4f-0ebf-4b07-b842-f995d4d26172",
+    link: "https://zoom.com",
+  },
+  {
+    id: "584398b9-9504-4b8f-9474-3c01ece9f27f",
+    title: "Event Test 3",
+    color: "#ebaed6",
+    startTime: "2024-03-04T08:15:35+00:00",
+    endTime: "2024-03-04T08:45:35+00:00",
+    description: "Test event 3 description",
+    ownerId: "b4283730-bd03-4846-846c-08dff3d318ae",
+    link: "https://amazon.com",
+  },
+];

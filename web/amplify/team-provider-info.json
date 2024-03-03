@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-planorama-dev-31010-authRole",
+      "UnauthRoleArn": "arn:aws:iam::683146428263:role/amplify-planorama-dev-31010-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::683146428263:role/amplify-planorama-dev-31010-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-planorama-dev-31010-deployment",
+      "UnauthRoleName": "amplify-planorama-dev-31010-unauthRole",
+      "StackName": "amplify-planorama-dev-31010",
+      "StackId": "arn:aws:cloudformation:us-east-2:683146428263:stack/amplify-planorama-dev-31010/580f3a50-d6e2-11ee-a41b-024295d47c75",
+      "AmplifyAppId": "d35d9hr186aok7"
+    },
+    "categories": {
+      "auth": {
+        "planorama4fdb6655": {}
+      }
+    }
+  }
+}

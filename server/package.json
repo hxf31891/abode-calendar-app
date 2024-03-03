@@ -1,0 +1,21 @@
+{
+  "name": "@abodecal/server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "author": "hxf31891",
+  "keywords": [],
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "start": "clear && TZ='UTC' nodemon",
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "migrations:make": "yarn build && dotenv -e .env.local sequelize-mig migration:make -- -n",
+    "migrations:run": "yarn build && dotenv -e .env.local sequelize-cli db:migrate",
+    "test": "jest --clearCache && jest ./src/tests"
+  },
+  "license": "ISC"
+}

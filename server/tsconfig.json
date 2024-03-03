@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "lib": ["es5", "es6", "esnext", "dom"],
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "preserveSymlinks": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "strict": true,
+    "paths": {
+      "@/*": ["src/*"],
+    }
+  },
+  "tsc-alias": {
+    "verbose": false,
+    "resolveFullPaths": true,
+    "outDir": "./dist",
+  },
+  "include": [
+    "./configs/**/*.ts",
+    "./configs/**/*.js",
+    "./models/**/*.ts",
+    "./models/**/*.js",
+    "./src/**/*.ts",
+    "./src/**/*.js"
+  ],
+  "exclude": ["node_modules"],
+}
