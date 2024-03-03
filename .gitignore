@@ -5,7 +5,7 @@ web/coverage
 server/coverage
 
 # migrations
-server/migrations/*
+# server/migrations/*
 
 # dependencies
 node_modules

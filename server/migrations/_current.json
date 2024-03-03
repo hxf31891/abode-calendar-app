@@ -1,0 +1,140 @@
+{
+    "tables": {
+        "events": {
+            "tableName": "events",
+            "schema": {
+                "id": {
+                    "defaultValue": {
+                        "internal": true,
+                        "value": "Sequelize.UUIDV4"
+                    },
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.UUID"
+                },
+                "title": {
+                    "allowNull": false,
+                    "field": "title",
+                    "seqType": "Sequelize.STRING"
+                },
+                "color": {
+                    "allowNull": false,
+                    "field": "color",
+                    "seqType": "Sequelize.STRING"
+                },
+                "startTime": {
+                    "allowNull": false,
+                    "field": "start_time",
+                    "seqType": "Sequelize.DATE"
+                },
+                "endTime": {
+                    "allowNull": false,
+                    "field": "end_time",
+                    "seqType": "Sequelize.DATE"
+                },
+                "description": {
+                    "allowNull": true,
+                    "field": "description",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "ownerId": {
+                    "allowNull": false,
+                    "field": "owner_id",
+                    "seqType": "Sequelize.UUID"
+                },
+                "link": {
+                    "allowNull": true,
+                    "field": "link",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "createdAt": {
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "deletedAt": {
+                    "allowNull": true,
+                    "field": "deleted_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "id": {
+                    "defaultValue": {
+                        "internal": true,
+                        "value": "Sequelize.UUIDV4"
+                    },
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.STRING"
+                },
+                "email": {
+                    "allowNull": false,
+                    "field": "email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "firstName": {
+                    "allowNull": true,
+                    "field": "first_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "lastName": {
+                    "allowNull": true,
+                    "field": "last_name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "deletedAt": {
+                    "allowNull": true,
+                    "field": "deleted_at",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "event_invitations": {
+            "tableName": "event_invitations",
+            "schema": {
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "created_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updated_at",
+                    "seqType": "Sequelize.DATE"
+                },
+                "eventId": {
+                    "primaryKey": true,
+                    "field": "event_id",
+                    "seqType": "Sequelize.UUID"
+                },
+                "userId": {
+                    "primaryKey": true,
+                    "field": "user_id",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "path": "/Users/harry/abode-calendar-app/server/migrations/_current.json",
+    "backupPath": "/Users/harry/abode-calendar-app/server/migrations/_current_bak.json",
+    "exists": false,
+    "revision": 1
+}
